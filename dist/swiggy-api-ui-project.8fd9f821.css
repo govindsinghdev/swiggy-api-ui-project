@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: normal;
+}
+
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 30px;
+  line-height: 30px;
+}
+
+.header {
+  border-bottom: 1px solid #ddd;
+}
+
+.header .container {
+  display: flex;
+}
+
+.header .logo-col span {
+  font-family: cursive;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.header .logo-col .d {
+  text-transform: lowercase;
+}
+
+.header .logo-col .f, .header .logo-col .d {
+  color: #db5605;
+}
+
+.header .logo-col .o {
+  color: #fbae42;
+}
+
+.header .logo-col {
+  position: relative;
+}
+
+.header .logo-col .healthy {
+  color: #333;
+  font-family: cursive;
+  font-size: 20px;
+  font-style: italic;
+  position: absolute;
+  top: 22px;
+  left: 65px;
+}
+
+.header .nav-col {
+  align-items: center;
+  margin-left: auto;
+  display: inline-flex;
+}
+
+.header .nav-col ul li {
+  cursor: pointer;
+  padding-left: 50px;
+  font-weight: bold;
+  display: inline-flex;
+}
+
+.header .nav-col ul li.active, .header .nav-col ul li:hover {
+  color: #db5605;
+}
+
+.footer {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding: 35px 30px;
+  font-size: 16px;
+}
+
+.bodyWrapper {
+  padding: 50px 0;
+}
+/*# sourceMappingURL=swiggy-api-ui-project.8fd9f821.css.map */

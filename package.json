@@ -1,0 +1,27 @@
+{
+  "name": "swiggy-api-ui-project",
+  "version": "1.0.0",
+  "description": "This is api implementation ui project ",
+  "keywords": [],
+  "homepage": "https://github.com/govindsinghdev/swiggy-api-ui-project#readme",
+  "bugs": {
+    "url": "https://github.com/govindsinghdev/swiggy-api-ui-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/govindsinghdev/swiggy-api-ui-project.git"
+  },
+  "license": "ISC",
+  "author": "govind",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  }
+}
