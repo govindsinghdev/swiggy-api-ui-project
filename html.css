@@ -4,6 +4,7 @@ body{
     color: #333;
     font-size: 18px;
     line-height: normal;
+    font-weight: normal;
 }
 
 .container{
@@ -14,7 +15,8 @@ body{
 li{ list-style: none;}
 
 h1{ margin-bottom: 20px;}
-p { line-height: 30px; margin-bottom: 30px;}
+h2{ margin-bottom: 20px;}
+p { line-height: 30px; margin-bottom: 20px;}
 
 .header{
     border-bottom: 1px solid #ddd;
@@ -63,13 +65,16 @@ p { line-height: 30px; margin-bottom: 30px;}
 .header .nav-col ul li{
     display: inline-flex;
     padding-left: 50px;
-    cursor: pointer;
     font-weight: bold;
 }
 
-.header .nav-col ul li.active,
-.header .nav-col ul li:hover{
+.header .nav-col ul li a.active,
+.header .nav-col ul li a:hover{
     color: #db5605;
+}
+.header .nav-col ul li a{
+    text-decoration: none;
+    color: #000;
 }
 
 .footer {
@@ -81,5 +86,128 @@ p { line-height: 30px; margin-bottom: 30px;}
 
 
 .bodyWrapper{
-    padding: 50px 0;
+    padding: 25px 0;
+}
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.res-container .res-card{
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: calc(25% - 20px);
+    height: auto;
+    margin: 0 10px 40px;
+    padding: 15px;
+    box-shadow: 0 0 10px #ccc;
+}
+.res-container .res-card img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.res-container .res-card h3{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.res-container .res-card h4{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.inner_page {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.search { padding: 25px 0; }
+
+/* Container */
+.form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 45px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Heading */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form group */
+.form-container form div {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.form-container label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+  font-size: 16px;
+}
+
+/* Inputs & textarea */
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+/* Focus effect */
+.form-container input:focus,
+.form-container textarea:focus {
+  border-color: rgb(219, 86, 5);
+  outline: none;
+}
+
+/* Textarea height */
+.form-container textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Error message */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Button */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  background: rgb(219, 86, 5);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+.form-container button:hover {
+  background: rgb(219, 86, 5);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .form-container {
+    margin: 20px;
+    padding: 20px;
+  }
 }
